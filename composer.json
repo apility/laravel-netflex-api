@@ -1,0 +1,37 @@
+{
+  "name": "apility/laravel-netflex-api",
+  "description": "Netflex API facade for Laravel",
+  "keywords": [
+    "netflex",
+    "laravel"
+  ],
+  "homepage": "https://github.com/apility/laravel-netflex-api",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1",
+    "apility/netflex-api": "^1.0",
+    "illuminate/support": "~5.5.0 || ~5.6.0 || ~5.7.0 || ~5.8.0 || ^6.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Netflex\\Providers\\NetflexServiceProvider"
+      ],
+      "aliases": {
+        "NetflexAPI": "Netflex\\Facades\\NetflexAPI"
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Netflex\\": "src"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/apility/laravel-netflex-api/issues",
+    "source": "https://github.com/apility/laravel-netflex-api"
+  }
+}
